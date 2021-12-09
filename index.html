@@ -6,22 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paul Rozaire</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="mobile.css">
     <link rel="stylesheet" href="css/uikit.min.css" />
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.min.js"></script>
 </head>
 
-<body>
-    <div class="uk-position-relative uk-position-top-center">
+<body class="uk-padding-large@m uk-padding-remove-top uk-padding-remove-bottom">
+    <div class="uk-position-relative uk-position-top-center uk-padding-remove-top">
         <div></div>
         <h1 class="uk-position-relative uk-position-center">
-            Paul Rozaire
+            <a  style="text-decoration: inherit; color:inherit;" onclick="location.href='index.html'" href="#">Paul Rozaire</a>
         </h1>
-        <nav class="uk-position-relative uk-navbar" uk-navbar>
+        <nav class="uk-position-relative uk-navbar" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
             <div class="uk-navbar">
-                <ul class="uk-navbar-nav uk-animation-fade">
+                <ul class="uk-navbar-nav ">
                     <li class="uk-active "><a onclick="location.href='index.html'" href="#">Datos Personales</a></li>
                     <li class="uk-active"><a onclick="location.href='aficiones.html'" href="#">Mis aficiones</a></li>
                     <li class="uk-active"><a onclick="location.href='Bailar.html'" href="#">Bailar</a></li>
@@ -31,11 +31,11 @@
         </nav>
     </div>
 
-    <div class=" uk-position-relative uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-padding-large"
+    <div class=" uk-position-relative uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-padding-large uk-padding-remove-top"
         uk-grid>
         <div class="uk-card-media-left uk-cover-container">
             <img src="./img/Paul_Papa.jpg" alt="Profile" uk-cover>
-            <canvas width="600" height="600"></canvas>
+            <canvas width="auto" height="100"></canvas>
         </div>
         <div>
             <div class="uk-card-body">
@@ -46,7 +46,7 @@
                     <dt>Nombre</dt>
                     <dd>Paul Rozaire</dd>
                     <dt>Fecha de nacimiento</dt>
-                    <dd>20 de noviembre de 1999</dd>
+                    <dd>20 de noviembre de 1999 (22 años) </dd>
                     <dt>Nacionalidad</dt>
                     <dd>Francesa &#127467;&#127479; </dd>
                 </dl>

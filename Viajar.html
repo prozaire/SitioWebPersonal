@@ -6,22 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paul Rozaire</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="mobile.css">
     <link rel="stylesheet" href="css/uikit.min.css" />
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.min.js"></script>
 </head>
 
-<body>
+<body class="uk-padding-large uk-padding-remove-top uk-padding-remove-bottom">
     <div class="uk-position-relative uk-position-top-center">
         <div></div>
         <h1 class="uk-position-relative uk-position-center">
-            Paul Rozaire
+            <a  style="text-decoration: inherit; color:inherit;" onclick="location.href='index.html'" href="#">Paul Rozaire</a>
         </h1>
         <nav class="uk-position-relative uk-navbar" uk-navbar>
-            <div class="uk-navbar">
-                <ul class="uk-navbar-nav uk-animation-fade">
+            <div uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar" class="uk-navbar">
+                <ul class="uk-navbar-nav ">
                     <li class="uk-active "><a onclick="location.href='index.html'" href="#">Datos Personales</a></li>
                     <li class="uk-active"><a onclick="location.href='aficiones.html'" href="#">Mis aficiones</a></li>
                     <li class="uk-active"><a onclick="location.href='Bailar.html'" href="#">Bailar</a></li>
@@ -34,20 +34,19 @@
         uk-grid>
         <div class="uk-flex-last@s uk-card-media-right  uk-cover-container">
             <img src="./img/bangkok.jpg" alt="Bangkok" uk-cover>
-            <canvas width="600" height="600"></canvas>
+            <canvas width="auto" height="600"></canvas>
         </div>
         <div>
             <div class="uk-card-body">
                 <div class="uk-card-header">
                     <p class="uk-card-title">Viajar</p>
                 </div>
-                <h2>La danza es lo que me permitió ser yo mismo </h2>
-                <h3>Me encanta viajar.
+                <p>Me encanta viajar.
                     Tengo la suerte de tener unos padres a los que también les gusta viajar y que han podido llevarme a
                     diferentes lugares del mundo. <br> <br> 
                     La foto que puedes ver es una imagen de una calle de Bangkok. <br>
                     Tailandia es uno de mis países favoritos y sueño con volver allí algún día.
-                </h3>
+                </p>
             </div>
         </div>
     </div>
